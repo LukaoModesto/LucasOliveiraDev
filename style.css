@@ -208,7 +208,7 @@ html {
 }
 
 .about-click-animation {
-    animation: aboutBounce 0.6s ease;
+    animation: aboutHighlight 0.6s ease;
 }
 
 @keyframes aboutHighlight {
@@ -226,10 +226,51 @@ html {
     }
 
 }
-.delay-1 {
-    transition-delay: 0.2s;
+.skill-card {
+    
+    background: #111111;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+}
+.skill-card h3 {
+
+    color: white;
+
+    margin-bottom: 12px;
+}
+.skill-card p {
+
+    color: #CCCCCC;
+
+    line-height: 1.6;
+}
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #00d4ff;
+
+    box-shadow: 0 0 25px rgba(0,212,255,0.15);
+}
+.skill-card.show {
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.skill-card.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
 }
 
-.delay-2 {
-    transition-delay: 0.4s;
+.skill-card.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }

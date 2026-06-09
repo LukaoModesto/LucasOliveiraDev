@@ -36,3 +36,7 @@ aboutLink.addEventListener("click", () => {
     }, 600);
 
 });
+
+document.querySelectorAll(".skill-card").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.15}s`;
+});
