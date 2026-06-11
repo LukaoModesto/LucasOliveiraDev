@@ -94,7 +94,24 @@ html {
 
     color: white;
 }
+.overlay{
+    position: fixed;
+    inset: 0;
 
+    background: rgba(0,0,0,0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 998;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
 .hero {
     height: 100vh;
     
@@ -106,28 +123,30 @@ html {
 
     text-align: center;
 
-    transition: 1.4s ;
 }
 
 .hero h1{
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    transition: 1.4s ;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .hero h2{
     font-size: 2rem;
     color:#00D4FF;
     margin-bottom: 20px;
-    transition: 1.4s ;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .hero p {
     font-size: 1.2rem;
     color:#AAAAAA;
     margin-bottom: 30px;
-    transition: 1.4s ;
+    opacity: 0;
+    transform: translateY(30px);
 }
 .hero-buttons {
     opacity: 0;
@@ -534,24 +553,7 @@ html {
 
     font-size: 0.9rem;
 }
-.overlay{
-    position: fixed;
-    inset: 0;
 
-    background: rgba(0,0,0,0.5);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.3s;
-
-    z-index: 998;
-}
-
-.overlay.active{
-    opacity: 1;
-    visibility: visible;
-}
 
 @media (max-width: 768px) {
 

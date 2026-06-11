@@ -9,7 +9,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.5
+        threshold: 0.2
     }
 );
 
@@ -78,7 +78,11 @@ hamburger.addEventListener("click", () => {
     }
 
 });
-
+overlay.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+    hamburger.textContent = "☰";
+});
 document.querySelectorAll(".mobile-menu a").forEach((link) => {
 
     link.addEventListener("click", () => {
@@ -116,8 +120,4 @@ window.addEventListener("load", () => {
 
 });
 
-overlay.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-    overlay.classList.remove("active");
-    hamburger.textContent = "☰";
-});
+
