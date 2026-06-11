@@ -553,7 +553,9 @@ html {
 
     font-size: 0.9rem;
 }
-
+.mobile-menu {
+    display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -566,6 +568,8 @@ html {
         display: none;
     }
     .mobile-menu{
+        display: flex;
+        
         position: fixed;
 
         top: 85px;
