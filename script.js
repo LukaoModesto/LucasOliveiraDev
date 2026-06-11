@@ -37,11 +37,6 @@ aboutLink.addEventListener("click", () => {
 
 });
 
-document.querySelectorAll(".skill-card").forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.15}s`;
-});
-
-
 document.querySelectorAll(".nav-links a").forEach((link) => {
 
     link.addEventListener("click", () => {
