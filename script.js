@@ -75,6 +75,14 @@ skillCards.forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.15}s`;
 });
 
+document.querySelectorAll(".skills-grid .skill-card").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.15}s`;
+});
+
+document.querySelectorAll(".projects-grid .project-card").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.15}s`;
+});
+
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 const overlay = document.querySelector(".overlay");
