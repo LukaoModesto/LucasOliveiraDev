@@ -56,6 +56,23 @@ html {
     z-index: 1000;
 }
 
+.language-switcher{
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.language-switcher button:houver {
+    transform: scale(1.15);
+}
+
 .logo {
     font-size: 1.3rem;
     font-weight: 700;
