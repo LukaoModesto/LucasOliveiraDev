@@ -58,19 +58,29 @@ html {
 
 .language-switcher{
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .language-switcher button{
     background: transparent;
-    border: none;
+    border: 1px solid #00D4FF;
+    color: #00D4FF;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
     cursor: pointer;
-    font-size: 1.4rem;
-    transition: transform 0.3s ease;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
 }
 
-.language-switcher button:houver {
-    transform: scale(1.15);
+.language-switcher button:hover {
+    background: #00D4FF;
+    color: #0A0A0A;
 }
 
 .logo {

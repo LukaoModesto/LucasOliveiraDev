@@ -290,19 +290,6 @@ window.addEventListener("load", () => {
 
 });
 
-function changeLanguage(lang) {
-
-    document.querySelectorAll("[data-lang]").forEach((element) => {
-
-        const key = element.getAttribute("data-lang");
-
-        if (translation[lang][key]) {
-            element.textContent = translation[lang][key];
-        }
-
-    });
-
-}
 
 document.getElementById("pt-btn")
     .addEventListener("click", () => {
