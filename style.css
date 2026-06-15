@@ -8,6 +8,25 @@ body{
     background-color:#0A0A0A;
     color: white;
     font-family: 'Inter', sans-serif;
+    
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    pointer-events: none;
+
+    z-index: -2;
 }
 
 html {
@@ -115,6 +134,9 @@ html {
 .hero {
     height: 100vh;
     
+    position: relative;
+    overflow: hidden;
+
     display: flex;
     flex-direction: column;
 
@@ -123,6 +145,27 @@ html {
 
     text-align: center;
 
+}
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 800px;
+    height: 800px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(0,212,255,0.12) 0%,
+        transparent 70%
+    );
+
+    z-index: -1;
 }
 
 .hero h1{
